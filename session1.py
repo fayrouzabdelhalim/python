@@ -1,0 +1,20 @@
+lst = [1, 2, "A", "B"]
+print(lst[0])  # prints 1
+print(lst[1:-1])
+print(lst)
+lst[3] = "C"
+print(lst)
+lst.append("D")
+print(lst)
+lst.pop()
+print(lst)
+lst.pop(2)
+print(lst)
+lst.insert(0, "Y")
+print(lst)
+lst.remove("C")
+print(lst)
+lst.insert(3, "Y")
+print(lst)
+lst.remove("Y")
+print(lst)
