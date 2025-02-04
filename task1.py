@@ -1,48 +1,48 @@
 students_data = []
+
 while True:  
-            #specifiying inputs
-            std_name=input("Enter student name : ")
-            sbj= str(input ("subject name  :"))
-            mark= int(input ("your grade is :"))
+    # Specifying inputs
+    std_name = input("Enter student name: ")
+    sbj = input("Subject name: ")
+    
+    try:
+        mark = int(input("Your grade is: "))
+    except ValueError:
+        print("Invalid input! Please enter a numeric value for the grade.")
+        continue  # Restart the loop if the input is invalid
 
-            #marking grades
-            if mark >= 90:
-               grade = "A"
-               print(std_name, "has a grade",grade)
-            elif mark >= 80:
-              grade= "B"
-              print(std_name, "has a grade",grade)
-            elif mark >= 60 :
-                  grade= "C"
-                  print(std_name, "has a grade", grade)
-            else :
-                grade ="fail"
-                print(std_name, grade)
+    # Marking grades
+    if mark >= 90:
+        grade = "A"
+    elif mark >= 80:
+        grade = "B"
+    elif mark >= 60:
+        grade = "C"
+    else:
+        grade = "Fail"
 
+    print(f"{std_name} has a grade {grade}")
 
-            #making dictionary
-            student_dict = {
-                    "name": std_name,
-                    "subject": sbj,
-                     "marks": mark,
-                     "grade": grade
-                }
-                students_data.append(student_dict)
-                for student in students_data:
-                 print(student)
-                 print(student_dict())
+    # Creating dictionary
+    student_dict = {
+        "name": std_name,
+        "subject": sbj,
+        "marks": mark,
+        "grade": grade
+    }
 
-            another = input("Do you want to enter details for another student? (yes/no): ")
-            if another != "yes":
-               print("finished, Goodbye!")
-               #printing all students data
-               print("\nAll student data:")
-               
-                #print(student_dict)
-            
-               break
-           
+    students_data.append(student_dict)  # Store data correctly
 
+    # Printing all stored student data
+    print("\nCurrent Student Data:")
+    for student in students_data:
+        print(student)  # Print each stored student dictionary
 
-
-
+    # Asking if the user wants to continue
+    another = input("Do you want to enter details for another student? (yes/no): ").strip().lower()
+    if another != "yes":
+        print("\nFinished, Goodbye!")
+        print("\nAll Student Data:")
+        for student in students_data:
+            print(student)  # Print all collected data before exiting
+        break
