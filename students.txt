@@ -1,0 +1,8 @@
+Student Name | Subject  | Degree | Grade
+----------------------------------------
+Maher        | English  |     45 | Fail
+Madeh        | Arabic   |     95 | A
+Fayrouz      | Math     |     75 | C
+Basmala      | History  |     85 | B
+Aml          | English  |     65 | C
+Nadine       | Math     |     61 | C
