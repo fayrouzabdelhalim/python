@@ -1,5 +1,4 @@
 # python
-feat: Add README for Python learning journey
 
 - Documenting the start of my Python learning journey with ZagEng
 - Beginning with the basics to build a strong foundation
