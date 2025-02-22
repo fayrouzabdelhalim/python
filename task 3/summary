@@ -1,0 +1,30 @@
+What I Learned from This Task
+Throughout this task, I explored various ways to analyze and manipulate Pokémon data using Pandas. Here’s a summary of what I learned:
+
+1. Filtering Data
+I learned how to select specific Pokémon based on different conditions. I was able to:
+
+Find slow Pokémon with Speed ≤ 10
+Identify all Legendary Pokémon
+Select Pokémon that have Fire as Type 1 and Flying as Type 2
+2. Counting and Summarizing Data
+I practiced counting Pokémon that fit specific conditions, such as:
+
+The number of Pokémon that have Poison as either Type 1 or Type 2
+Finding the most common Type 1 among Legendary Pokémon
+Counting how many Pokémon belong to each type
+3. Finding Extremes (Max, Min, and Outliers)
+I found that Avalugg has the highest Defense among Ice-type Pokémon
+I learned about outliers, which are extreme values that are significantly different from the rest of the data
+I explored how to detect outliers using the Interquartile Range (IQR) method
+4. Understanding the Effects of Outliers
+I discovered that outliers affect the mean but do not significantly impact the median
+This is important because extreme values can distort data analysis, making some statistics unreliable
+5. Visualizing Data
+I learned that boxplots help detect outliers by showing the distribution of values
+I explored how bar charts can display the frequency of different Pokémon types
+How This Helps Me
+I now know how to filter, count, and analyze Pokémon data efficiently
+I understand how to detect and interpret outliers in datasets
+I can summarize distributions and find trends in data
+This task gave me a strong foundation in data analysis with Pandas. I can now explore more advanced topics like grouping data or applying custom calculations.
