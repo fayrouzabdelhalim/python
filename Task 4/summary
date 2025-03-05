@@ -1,0 +1,8 @@
+this task was about cleaning and processing data 
+cleaned and processed a Play Store dataset to make it structured and usable. Key steps included:
+Handling Missing Data: Filled NaN values in Rating and dropped missing values in other columns.
+Cleaning Numeric Data: Converted Reviews, Installs, Size, and Price to proper numerical formats.
+Fixing Categorical Data: Formatted Category names and handled unknown values.
+Removing Duplicates: Kept only the entry with the highest Reviews for each app.
+Adding a Distribution Column: Classified apps as "Free" or "Paid" based on price.
+Saving the Cleaned Data: Exported the final dataset as "filteredplaystore.csv".
